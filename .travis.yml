@@ -4,4 +4,5 @@ services:
   - docker
 
 script:
-  - docker build .
+  - docker build -t airhelp/kops
+  - docker run --rm -i airhelp/kops version

@@ -1,9 +1,9 @@
-FROM alpine:3.5
+FROM alpine:3.7
 
-ENV KOPS_VERSION=1.8.0
+ENV KOPS_VERSION=1.9.0
 # https://kubernetes.io/docs/tasks/kubectl/install/
 # latest stable kubectl: curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
-ENV KUBECTL_VERSION=v1.8.7
+ENV KUBECTL_VERSION=v1.10.2
 
 RUN apk --no-cache add ca-certificates \
   && apk --no-cache add --virtual build-dependencies curl \
